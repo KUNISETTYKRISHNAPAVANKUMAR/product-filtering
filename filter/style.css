@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "poppins",sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(104, 209, 209);
+}
+.container{
+    width: 90%;
+    margin: auto;
+}
+#input-container{
+    margin: 1em;
+}
+#product-name{
+    width: 40%;
+    padding: 1em 0;
+    outline: none;
+    background-color: transparent;
+    border:none;
+    font-size: 1rem;
+    border-bottom: 2px solid;
+}
+#product-name:focus{
+    border-bottom: 2px solid rgb(128, 132, 132);
+}
+#submit{
+    padding: 1em;
+    background-color: blue;
+    border: none;
+    border-radius: 25px;
+    width: 10%;
+    color: aliceblue;
+    font-size: 1rem;
+    cursor: pointer;
+}
+#filter-btn-container{
+    margin: 1em;
+}
+.filter-btn{
+    padding: 0.8rem;
+    /* width: 10%; */
+    border: 2px solid slateblue;
+    border-radius: 25px;
+    background-color: transparent;
+    color: rgb(75, 76, 77);
+    font-size: 1rem;
+    cursor: pointer;
+}
+#product-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.card{
+    width: 15%;
+    height: 40vh;
+    box-shadow: 0.5em 0em 0.8em rgb(72, 71, 71);
+    margin: 10px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    padding: 1rem 0;
+}
+.card img{
+    object-fit: cover;
+    object-position: top;
+    width: 90%;
+    height: 80%;
+}
+.details{
+    width: 90%;
+    margin-top: 0.8rem;
+}
+.active{
+    background-color: blue;
+    color: white;
+    border: none;
+}
+
+@media screen and (max-width:720px) {
+    .card{
+        width: 30%;
+        height: 50vh;
+    }
+    .details{
+        margin-top: 0.6rem;
+    }
+    #submit{
+        width: 20%;
+    }
+}
+
+@media screen and (max-width:460px) {
+    .card{
+        width: 43%;
+        height: 40vh;
+    }
+    #product-name{
+        width: 70%;
+    }
+    #submit{
+        width: 25%;
+    }
+    .filter-btn{
+        margin: 4px;
+    }
+
+    
+}
